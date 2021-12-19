@@ -1,2 +1,2 @@
 # store-front
-- nitlify:https://distracted-bhaskara-6170db.netlify.app/
+- nitlify:https://quirky-neumann-abd8f6.netlify.app/
