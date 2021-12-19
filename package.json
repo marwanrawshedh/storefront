@@ -1,0 +1,48 @@
+{
+  "name": "class-32-solution-todo",
+  "version": "1.0.0",
+  "description": "",
+  "keywords": [],
+  "main": "src/index.js",
+  "dependencies": {
+    "@blueprintjs/core": "^3.52.0",
+    "@emotion/react": "^11.7.1",
+    "@emotion/styled": "^11.6.0",
+    "@mui/icons-material": "^5.2.4",
+    "@mui/material": "^5.2.4",
+    "faker": "^5.5.3",
+    "jsonwebtoken": "^8.5.1",
+    "node-sass": "^6.0.1",
+    "react": "^17.0.2",
+    "react-bootstrap": "^1.6.1",
+    "react-cookies": "^0.1.1",
+    "react-dom": "^17.0.2",
+    "react-if": "^4.1.1",
+    "react-redux": "^7.2.6",
+    "react-router-dom": "5.2.0",
+    "react-scripts": "4.0.3",
+    "redux": "^4.1.2",
+    "redux-devtools-extension": "^2.13.9",
+    "redux-logger": "^3.0.6",
+    "uuid": "^8.3.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
