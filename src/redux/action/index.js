@@ -10,3 +10,15 @@ export const dog = customer => {
       payload: customer,
     };
   };
+  export const buy = customer => {
+    return {
+      type: 'buy',
+      payload: customer,
+    };
+  };
+    export const decrement= customer => {
+    return {
+      type: 'decrement',
+      payload: customer,
+    };
+  };

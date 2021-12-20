@@ -6,6 +6,7 @@ import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import { Button, CardActionArea } from '@mui/material';
 import Grid from '@mui/material/Grid';
+import { cat, dog, buy } from '../redux/action';
 function Products(props) {
     return (
         <div style={{ marginTop: "40px" }} >
@@ -33,7 +34,7 @@ function Products(props) {
           </Typography>
         </CardContent>
       </CardActionArea>
-      {/* <Button variant="contained">Add</Button> */}
+      <Button onClick={()=>props.buy(d)} variant="contained" >Add</Button>
     </Card>
     </Grid>)})}
                 </Grid>
@@ -57,6 +58,7 @@ function Products(props) {
           </Typography>
         </CardContent>
       </CardActionArea>
+      <Button onClick={()=>props.buy(d)} variant="contained" >Add</Button>
     </Card></Grid>)})}
     </Grid>
         </div>
@@ -66,10 +68,11 @@ const mapStateToProps = state => ({
     cart: state.cart,
   });
   
-  const mapDispatchToProps = (dispatch) => ({
-    cat: () => dispatch(cat()),
-    dog: () => dispatch(dog()),
-  });
+  const mapDispatchToProps = {
+    cat,
+    dog,
+    buy
+  };
   export default connect(
     mapStateToProps,
     mapDispatchToProps,
