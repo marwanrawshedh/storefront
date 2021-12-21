@@ -22,3 +22,23 @@ export const dog = customer => {
       payload: customer,
     };
   };
+  export const buycat = customer => {
+    return {
+      type: 'buycat',
+      payload: customer,
+    };}
+    export const buydog = customer => {
+      return {
+        type: 'buydog',
+        payload: customer,
+      };}
+      export const dcat= customer => {
+        return {
+          type: 'dcat',
+          payload: customer,
+        };}
+        export const ddog = customer => {
+          return {
+            type: 'ddog',
+            payload: customer,
+          };}
