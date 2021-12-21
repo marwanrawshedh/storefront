@@ -12,7 +12,7 @@ import Button from "@mui/material/Button";
 import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
 import { connect } from "react-redux";
-import { decrement } from "../redux/action";
+import { decrement,ddog,dcat } from "../redux/action";
 import { If } from 'react-if';
 import ListItemIcon from "@mui/material/ListItemIcon";
 import LocalGroceryStoreIcon from "@mui/icons-material/LocalGroceryStore";
@@ -136,7 +136,7 @@ const ResponsiveAppBar = (props) => {
                 return (
                   <If condition={setting.num>0}>   
                <MenuItem key={setting} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center">{setting.name}:{setting.num}<IconButton onClick={()=> props.decrement(setting)} sx={{ p: 0 }}>
+                  <Typography textAlign="center">{setting.name}:{setting.num}<IconButton onClick={()=> {props.dcat(setting),props.ddog(setting),props.decrement(setting)}} sx={{ p: 0 }}>
                 <ListItemIcon>
                 <DeleteIcon />
                 </ListItemIcon>
@@ -156,7 +156,7 @@ const mapStateToProps = (state) => ({
 });
 
 const mapDispatchToProps = {
-  decrement
+  decrement,ddog,dcat
   
 };
 export default connect(mapStateToProps, mapDispatchToProps)(ResponsiveAppBar);
